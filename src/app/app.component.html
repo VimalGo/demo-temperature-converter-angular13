@@ -1,0 +1,44 @@
+<h1>Temperature Converter</h1>
+<br />
+
+<h3>With change event</h3>
+<div class="row">
+  <label>Celsius : </label>
+  <input
+    type="number"
+    class="form-control"
+    [(ngModel)]="celsiusChangeEvent"
+    (change)="CelsiusToFahrenheitChangeEvent($event)"
+  />
+</div>
+<br />
+<div class="row">
+  <label>Fahrenheit : </label>
+  <input
+    type="number"
+    [(ngModel)]="fahrenheitChangeEvent"
+    (change)="FahrenheitToCelsiusChangeEvent($event)"
+  />
+</div>
+
+<br />
+<br />
+
+<h3>With ngModelChange event</h3>
+<div class="row">
+  <label>Celsius : </label>
+  <input
+    type="number"
+    [ngModel]="celsius"
+    (ngModelChange)="CelsiusToFahrenheit($event)"
+  />
+</div>
+<br />
+<div class="row">
+  <label>Fahrenheit : </label>
+  <input
+    type="number"
+    [ngModel]="fahrenheit"
+    (ngModelChange)="FahrenheitToCelsius($event)"
+  />
+</div>
