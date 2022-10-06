@@ -1,5 +1,7 @@
 # TemperatureConverter
 
+Demo of Temperature Converter. Convert Celsius To Fahrenheit and vice versa. Understand difference between (change) event and (ngModelChange) event.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.4.
 
 ## Development server
